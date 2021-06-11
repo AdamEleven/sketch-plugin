@@ -9,7 +9,6 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve('./lib'),
-    library: 'sketchPlugin',
     libraryTarget: 'commonjs2'
   },
   module: {
