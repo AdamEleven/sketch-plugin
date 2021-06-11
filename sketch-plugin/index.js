@@ -1,10 +1,11 @@
 /* eslint-disable */
 const path = require('path');
+const { cwd } = require('process');
 var hasSet = false;
 
 module.exports = class SketchPlugin {
   apply(compiler) {
-    const sketchPath = path.join(__dirname, './node_modules/@xes/sketch-plugin/lib/script.js');
+    const sketchPath = path.join(process.cwd(), './node_modules/@xes/sketch-plugin/lib/script.js');
     compiler.hooks.entryOption.tap('SketchPlugin', (context, entry) => {
       if (!hasSet) {
         hasSet = true;
