@@ -52,7 +52,7 @@
   // 开关
   const btn = document.createElement('div');
   btn.innerText = 'toggle';
-  btn.style = 'position: fixed; z-index: 10000; top: 0; right: 0; opacity: 1; font-size: 16px; width: 60px; height: 22px; border: 1px solid #000; border-radius: 4px; text-align: center;';
+  btn.style = 'position: fixed; z-index: 10000; top: 8px; right: 8px; opacity: 1; font-size: 16px; width: 60px; height: 22px; border: 1px solid #000; border-radius: 4px; text-align: center;';
   btn.onclick = function () {
     toggleImg();
   };
@@ -60,7 +60,7 @@
   // 图片地址
   var input = document.createElement('input');
   input.placeholder = '请输入视觉稿地址, 按回车生效';
-  input.style = 'position: fixed; z-index: 10000; top: 0; left: 0; font-size: 16px; width: 260px; height: 22px;';
+  input.style = 'position: fixed; z-index: 10000; top: 8px; left: 8px; font-size: 16px; width: 260px; height: 22px;';
   input.onkeydown = function (e) {
     if (e.keyCode == 13) {
       switchImg();
