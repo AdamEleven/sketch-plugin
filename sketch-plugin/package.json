@@ -1,6 +1,6 @@
 {
   "name": "@xes/sketch-plugin",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "",
   "main": "./index.js",
   "scripts": {
@@ -8,10 +8,12 @@
   },
   "author": "zhuzhiheng",
   "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.5",
     "babel-loader": "^8.2.2",
-    "live-server": "^1.2.1",
     "path": "^0.12.7",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",
