@@ -30,7 +30,7 @@
   // 浮层组件
   const img = document.createElement('img');
   img.style = 'display: block; width: 100%; position: static; padding: 200px 0;';
-  img.src = 'http://static.layer.com/Downloads/layer.png';
+  img.src = '';
 
   function showImg() {
     box.style.display = 'block';
