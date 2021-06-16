@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-    index: './index.js',
+    // index: './index.js',
     script: './script.js'
   },
   output: {
@@ -15,6 +15,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules\/live-server/,
         use: {
           loader: 'babel-loader',
         }

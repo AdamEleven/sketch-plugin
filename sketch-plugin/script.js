@@ -41,7 +41,12 @@
   }
 
   function switchImg() {
-    img.src = input.value;
+    let url = input.value;
+    if (!/^https?:\/\//.test(url)) {
+      if (/^\//) url = url.replace('/', '');
+      url = 'http://localhost:8228/' + url;
+    }
+    img.src = url;
   }
 
   // 开关
@@ -74,7 +79,6 @@
   (function () {
     let ctrl = option = x = false;
     window.onkeydown = function (e) {
-      console.log(e.keyCode);
       const code = e.keyCode;
       if (code === 17) ctrl = true;
       if (code === 18) option = true;
@@ -91,7 +95,6 @@
       if (ctrl && option && x) toggleImg();
     };
     window.onkeyup = function (e) {
-      console.log(e.keyCode);
       const code = e.keyCode;
       if (code === 17) ctrl = false;
       if (code === 18) option = false;
