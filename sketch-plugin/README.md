@@ -3,7 +3,7 @@
 ## 使用说明
 > 推荐在页面布局以及细节开发完成的时候启用, 进行局部微调操作
 ```JavaScript
-npm i @xes/sketch-plugin --registry=https://npm.xesv5.com/
+npm i sketch-plugin
 
 const SketchPlugin = require('@xes/sketch-plugin');
 
