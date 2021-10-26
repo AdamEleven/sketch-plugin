@@ -1,6 +1,6 @@
 npm run build && 
 npm version patch && 
-npm publish --registry=https://npm.xesv5.com/ &&
+npm publish &&
 git add . && 
 git commit -m 'update version' && 
 git push
